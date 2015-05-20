@@ -23,20 +23,20 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("Java Bot Made By Yemasthui, Edited By COOLJ|The Bouncer|xBytez");
+                    API.sendChat("Java Bot Made By Yemasthui, Edited By COOLJ|The Bouncer|xBytez|Yung");
                 }
             }
         };
         
         bot.commands.deeCommand = {
-            command: 'nuts',  //The command to be called. With the standard command literal this would be: !bacon
+            command: 'like',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Deez Nuts!");
+                    API.sendChat("/me OMG! I love this track!");
                 }
             }
         };
@@ -97,17 +97,17 @@
             ["theme", "This song does not fit the room theme. "],
             ["op", "This song is on the OP list. "],
             ["history", "This song is in the history. "],
-            ["mix", "You played a mix, which is against the rules. "],
+            ["mix", "You're not allowed to pay mixes. "],
             ["sound", "The song you played had bad sound quality or no sound. "],
-            ["nsfw", "The song you contained was NSFW (image or sound). "],
+            ["nsfw", "The song you played contained NSFW (image or sound). "],
             ["unavailable", "The song you played was not available for some users. "],
-            ["troll", "The song you played is considered trolling if you play it again you will be banned"]
+            ["troll", "The song you played is considered trolling. If you play it again you will be banned"]
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
         motdEnabled: true,
         motdInterval: 4,
-        motd: "Your #1 plug for a unique and diverse taste of The Nation!",
+        motd: "The Nation, your #1 plug community for a unique and diverse taste of music!",
         filterChat: true,
         etaRestriction: false,
         welcome: true,
